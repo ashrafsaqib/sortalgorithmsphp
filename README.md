@@ -1,5 +1,7 @@
-# sortalgorithmsphp
+
 Sorting Algorithms in PHP 
+
+#Bubble Sort
 ```
 <?php
 
@@ -13,11 +15,16 @@ function bubbleSort(&$a){
 			swap($a,$i);
 	}
 }
-function swapNeighbours(&$array,$i){
+function swap(&$array,$i){
 	$temp=$array[$i];
 	$array[$i]=$array[$i+1];
 	$array[$i+1]=$temp;
 }
+
+```
+#Insertion Sort
+
+```
 function insertionSort(&$a){
 	for($i=1;$i<count($a);$a++)
 	{
@@ -29,9 +36,11 @@ function insertionSort(&$a){
 	}
 }
 
-//bubbleSort($a);
-//echo implode(' ',$a);
-
+bubbleSort($a);
+echo implode(' ',$a);
+```
+#Merge Sort
+```
 function divideArray($a){
 	if(count($a)>2)
 		$pivot=ceil(count($a)/2);
