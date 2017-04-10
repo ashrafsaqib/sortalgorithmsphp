@@ -1,7 +1,6 @@
+# Sorting Algorithms in PHP 
 
-Sorting Algorithms in PHP 
-
-#Bubble Sort
+## Bubble Sort
 ```
 <?php
 
@@ -24,7 +23,7 @@ function swap(&$array,$i){
 bubbleSort($a);
 echo implode(' ',$a);
 ```
-#Merge Sort
+## Merge Sort
 ```
 function divideArray($a){
 	if(count($a)>2)
