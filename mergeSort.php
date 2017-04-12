@@ -36,5 +36,6 @@ function mergeSort($a){
 	}
 }
 
+$a=[33,55,12,95,20,2,10,4,5];
 $a=mergeSort($a);
 echo implode(' ',$a);
