@@ -1,7 +1,5 @@
 <?php
 
-$a=[33,55,12,95,20,2,10,4,5];
-
 function bubbleSort(&$a){
 	for($j=count($a);$j>0;$j--){
 		for($i=0; $i<$j-1;$i++){
@@ -16,5 +14,6 @@ function swap(&$array,$i){
 	$array[$i+1]=$temp;
 }
 
+$a=[33,55,12,95,20,2,10,4,5];
 bubbleSort($a);
 echo implode(' ',$a);
